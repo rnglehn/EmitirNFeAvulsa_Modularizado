@@ -1,0 +1,12 @@
+# Python: não versiona pastas de cache e logs
+__pycache__/
+*.py[cod]
+*.log
+
+# Virtualenv: não versiona sua máquina virtual
+.venv/
+venv/
+ENV/
+
+# Dados: não versiona planilhas ou bases de dados
+*.xlsx
