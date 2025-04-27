@@ -102,18 +102,13 @@ def perform_login_with_selenium(excel_path: str, farm_name: str, operacao: str):
         ))
         driver.execute_script("arguments[0].scrollIntoView(true);", menu)
         menu.click()
-
-        # Seleciona operação
-        sel_el = wait.until(EC.element_to_be_clickable((By.ID, "vNFEAOPERACAOID")))
-        Select(sel_el).select_by_visible_text(operacao)
-
-        # Emissão (linha 6)
-        btn = wait.until(EC.element_to_be_clickable((
-            By.CSS_SELECTOR,
-            "#TBNFE > tbody > tr:nth-child(6) > td:nth-child(2) > input:nth-child(2)"
-        )))
-        driver.execute_script("arguments[0].scrollIntoView(true);", btn)
-        btn.click()
+        
+         # Emitir NF-e Avulsa
+        nfe_avulsa_btn = wait.until(EC.element_to_be_clickable(
+            (By.CSS_SELECTOR, "#TBNFE > tbody > tr:nth-child(6) > td:nth-child(2) > input:nth-child(2)")
+        ))
+        driver.execute_script("arguments[0].scrollIntoView(true);", nfe_avulsa_btn)
+        nfe_avulsa_btn.click()
 
     except Exception:
         import traceback; traceback.print_exc()

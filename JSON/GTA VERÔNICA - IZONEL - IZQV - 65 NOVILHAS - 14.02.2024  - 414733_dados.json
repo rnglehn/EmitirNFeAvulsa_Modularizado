@@ -1,0 +1,25 @@
+{
+  "numero_gta": "414733",
+  "uf": "TO",
+  "serie": "F",
+  "validade": "14/02/2024",
+  "cpf_procedencia": "83097333720",
+  "cpf_destino": "55138675834",
+  "nome_procedencia": "JACQUELINE KELLY NICCHIO",
+  "nome_destino": "IZONEL VILELA DE QUEIROZ",
+  "estabelecimento_procedencia": "FAZENDA VERONICA",
+  "estabelecimento_destino": "FAZENDA SANTA ANA",
+  "municipio_procedencia": "ARAPOEMA - TO",
+  "municipio_destino": "WANDERLÂNDIA - TO",
+  "finalidade": "Engorda",
+  "categorias": [
+    {
+      "grupo": "Bovideos",
+      "especie": "Bovinos",
+      "categoria": null,
+      "faixa": "13 a 24 Meses",
+      "sexo": "Femea",
+      "quantidade": 65
+    }
+  ]
+}
